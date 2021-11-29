@@ -60,7 +60,7 @@ navLinks[5].textContent = siteContent['nav']['nav-item-6'];
 
 const logoPic = document.querySelector('#logo-img');
 
-logoPic.setAttribute("src", 'http://localhost:9000/img/logo.png');
+logoPic.setAttribute("src", siteContent['images']['logo-img']);
 
 //cta
 
@@ -71,7 +71,7 @@ const ctaPic = document.querySelector('#cta-img')
 ctaHead.textContent = siteContent['cta']['h1'];
 ctaButton.textContent = siteContent['cta']['button'];
 
-ctaPic.setAttribute("src", 'http://localhost:9000/img/cta.png');
+ctaPic.setAttribute("src", siteContent['images']['cta-img']);
 
 //main-content
 
@@ -96,7 +96,7 @@ aboutText.textContent = siteContent['main-content']['about-content'];
 
 const middlePic = document.querySelector('#middle-img');
 
-middlePic.setAttribute("src", 'http://localhost:9000/img/accent.png');
+middlePic.setAttribute("src", siteContent['images']['accent-img']);
 
 //services
 
