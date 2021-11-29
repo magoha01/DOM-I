@@ -40,3 +40,107 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+// MY CHANGES BEGIN
+
+//nav bar 
+
+const navLinks = document.querySelectorAll('nav a');
+
+navLinks.forEach(link => link.classList.add('italic'));
+
+navLinks[0].textContent = siteContent['nav']['nav-item-1'];
+navLinks[1].textContent = siteContent['nav']['nav-item-2'];
+navLinks[2].textContent = siteContent['nav']['nav-item-3'];
+navLinks[3].textContent = siteContent['nav']['nav-item-4'];
+navLinks[4].textContent = siteContent['nav']['nav-item-5'];
+navLinks[5].textContent = siteContent['nav']['nav-item-6'];
+
+//logo img
+
+const logoPic = document.querySelector('#logo-img');
+
+logoPic.setAttribute("src", siteContent['images']['logo-img']);
+
+//cta
+
+const ctaHead = document.querySelector('h1');
+const ctaButton = document.querySelector('.cta button')
+const ctaPic = document.querySelector('#cta-img')
+
+ctaHead.textContent = siteContent['cta']['h1'];
+ctaButton.textContent = siteContent['cta']['button'];
+
+ctaPic.setAttribute("src", siteContent['images']['cta-img']);
+
+//main-content
+
+//features
+const features = document.querySelector('.text-content:nth-of-type(1)')
+const featureHead = features.querySelector('h4');
+const featureText = features.querySelector('p');
+
+featureHead.textContent = siteContent['main-content']['features-h4'];
+featureText.textContent = siteContent['main-content']['features-content'];
+
+
+//about
+const about = document.querySelector('.text-content:nth-of-type(2)')
+const aboutHead = about.querySelector('h4');
+const aboutText = about.querySelector('p');
+
+aboutHead.textContent = siteContent['main-content']['about-h4'];
+aboutText.textContent = siteContent['main-content']['about-content'];
+
+//middle-img
+
+const middlePic = document.querySelector('#middle-img');
+
+middlePic.setAttribute("src", siteContent['images']['accent-img']);
+
+//services
+
+const services = document.querySelector('.bottom-content .text-content:nth-of-type(1)')
+const servicesHead = services.querySelector('h4');
+const servicesText = services.querySelector('p');
+
+servicesHead.textContent = siteContent['main-content']['services-h4'];
+servicesText.textContent = siteContent['main-content']['services-content'];
+
+//product
+
+const product = document.querySelector('.bottom-content .text-content:nth-of-type(2)')
+const productHead = product.querySelector('h4');
+const productText = product.querySelector('p');
+
+productHead.textContent = siteContent['main-content']['product-h4'];
+productText.textContent = siteContent['main-content']['product-content'];
+
+//vision
+
+const vision = document.querySelector('.bottom-content .text-content:nth-of-type(3)')
+const visionHead = vision.querySelector('h4');
+const visionText = vision.querySelector('p');
+
+visionHead.textContent = siteContent['main-content']['vision-h4'];
+visionText.textContent = siteContent['main-content']['vision-content'];
+
+//contact
+
+const contact = document.querySelector('.contact');
+const contactHead = contact.querySelector('h4');
+const address = contact.querySelector('p:nth-of-type(1)');
+const phone = contact.querySelector('p:nth-of-type(2)');
+const email = contact.querySelector('p:nth-of-type(3)');
+
+contactHead.textContent = siteContent["contact"]["contact-h4"];
+address.textContent = siteContent["contact"]["address"];
+phone.textContent = siteContent["contact"]["phone"];
+email.textContent = siteContent["contact"]["email"];
+
+//footer
+
+const copyright = document.querySelector('footer a');
+
+copyright.classList.add('bold');
+copyright.textContent = siteContent['footer']['copyright'];
