@@ -64,11 +64,34 @@ logoPic.setAttribute("src", 'http://localhost:9000/img/logo.png');
 
 //cta
 
-const ctaHeader = document.querySelector('h1');
+const ctaHead = document.querySelector('h1');
 const ctaButton = document.querySelector('.cta button')
 const ctaPic = document.querySelector('#cta-img')
 
-ctaHeader.textContent = siteContent['cta']['h1'];
+ctaHead.textContent = siteContent['cta']['h1'];
 ctaButton.textContent = siteContent['cta']['button'];
 
 ctaPic.setAttribute("src", 'http://localhost:9000/img/cta.png');
+
+//main-content
+
+//features
+const features = document.querySelector('.text-content:nth-of-type(1)')
+const featureHead = features.querySelector('h4');
+const featureText = features.querySelector('p');
+
+featureHead.textContent = siteContent['main-content']['features-h4'];
+featureText.textContent = siteContent['main-content']['features-content'];
+
+
+//about
+const about = document.querySelector('.text-content:nth-of-type(2)')
+const aboutHead = about.querySelector('h4');
+const aboutText = about.querySelector('p');
+
+aboutHead.textContent = siteContent['main-content']['about-h4'];
+aboutText.textContent = siteContent['main-content']['about-content'];
+
+middlePic = document.querySelector('#middle-img');
+
+middlePic.setAttribute("src", 'http://localhost:9000/img/accent.png');
