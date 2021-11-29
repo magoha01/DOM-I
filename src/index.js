@@ -43,6 +43,8 @@ console.log('project wired!')
 
 // MY CHANGES BEGIN
 
+//nav bar 
+
 const navLinks = document.querySelectorAll('nav a');
 
 navLinks.forEach(link => link.classList.add('italic'));
@@ -53,3 +55,20 @@ navLinks[2].textContent = siteContent['nav']['nav-item-3'];
 navLinks[3].textContent = siteContent['nav']['nav-item-4'];
 navLinks[4].textContent = siteContent['nav']['nav-item-5'];
 navLinks[5].textContent = siteContent['nav']['nav-item-6'];
+
+//logo img
+
+const logoPic = document.querySelector('#logo-img');
+
+logoPic.setAttribute("src", 'http://localhost:9000/img/logo.png');
+
+//cta
+
+const ctaHeader = document.querySelector('h1');
+const ctaButton = document.querySelector('.cta button')
+const ctaPic = document.querySelector('#cta-img')
+
+ctaHeader.textContent = siteContent['cta']['h1'];
+ctaButton.textContent = siteContent['cta']['button'];
+
+ctaPic.setAttribute("src", 'http://localhost:9000/img/cta.png');
