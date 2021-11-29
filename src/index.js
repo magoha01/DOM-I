@@ -92,6 +92,35 @@ const aboutText = about.querySelector('p');
 aboutHead.textContent = siteContent['main-content']['about-h4'];
 aboutText.textContent = siteContent['main-content']['about-content'];
 
-middlePic = document.querySelector('#middle-img');
+//middle-img
+
+const middlePic = document.querySelector('#middle-img');
 
 middlePic.setAttribute("src", 'http://localhost:9000/img/accent.png');
+
+//services
+
+const services = document.querySelector('.bottom-content .text-content:nth-of-type(1)')
+const servicesHead = services.querySelector('h4');
+const servicesText = services.querySelector('p');
+
+servicesHead.textContent = siteContent['main-content']['services-h4'];
+servicesText.textContent = siteContent['main-content']['services-content'];
+
+//product
+
+const product = document.querySelector('.bottom-content .text-content:nth-of-type(2)')
+const productHead = product.querySelector('h4');
+const productText = product.querySelector('p');
+
+productHead.textContent = siteContent['main-content']['product-h4'];
+productText.textContent = siteContent['main-content']['product-content'];
+
+//vision
+
+const vision = document.querySelector('.bottom-content .text-content:nth-of-type(3)')
+const visionHead = vision.querySelector('h4');
+const visionText = vision.querySelector('p');
+
+visionHead.textContent = siteContent['main-content']['vision-h4'];
+visionText.textContent = siteContent['main-content']['vision-content'];
